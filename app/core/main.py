@@ -30,7 +30,7 @@ class Application:
         parsed_data = self.worker.readData(data_filepath)
 
         for row in parsed_data:
-            self.last_DB_row = self.dao.insert_job(row['job_title'], 
+            self.last_DB_row = self.dao.insert_job(row['hello'], 
                                 row['company_name'], 
                                 row['salary'], 
                                 row['date'])
